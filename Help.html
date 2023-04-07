@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HChong Travel | Help</title>
+    <link rel="shortcut icon" href="Logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="tintuc.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<style>
+
+</style>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(238, 243, 247);">
+            <div class="container px-2">
+                <a class="navbar-brand" href="/">
+                    <img id="logo" width="100%" height="45px" src="Logo.jpg" alt="">
+                </a>
+                <button id="menu-con" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul id="menu" class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li><a class="text" style=" text-decoration: none;" href="index.html"><i
+                                    class="fa-solid fa-house"></i>
+                                Home</a></li>
+                        <li><a class="text" style=" text-decoration: none;" href="#"><i
+                                    class="fa-sharp fa-solid fa-comments">
+                                </i>Service</a></li>
+                        <li><a class="text" style=" text-decoration: none;" href="TinTuc.html"><i
+                                    class="fa-brands fa-servicestack"></i>
+                                Blog</a></li>
+                        <li><a class="text" style=" text-decoration: none;" href="#"><i class="fa-brands fa-hotjar"></i>
+                                Tour Hot
+                                Sale</a></li>
+                        <li><a class="text" style=" text-decoration: none;" href="Help.html"><i
+                                    class="fa-sharp fa-solid fa-headset"></i>
+                                Help</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <article>
+        <p style="font-size: 30px;" class="p-3 text-center text-uppercase text-secondary fw-bold">Nhân viên hỗ trợ dịch
+            vụ du lịch</p>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <center>
+                        <div class="shadow p-3 mb-5 bg-body rounded">
+                            <div class="card" style="width: 18rem;">
+                                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBYVFRgVFRUYGBgaHBgaGBoaGBgYGBkZGRkZGRkYGBgcIS4lHB4rIxgYJjgmKy8xNTU1GiU7QDs0Py40NTEBDAwMEA8QHhISGjQhISQ0NDE0NDE0NDQ0NDQ0MTQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0Pz80NP/AABEIAPsAyQMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAEBQIDBgEAB//EAEYQAAIBAgMEBwUGBQEFCQEAAAECAAMRBBIhBTFBUQYiYXGBkfATMqGxwQdCUnLR4RRigrLxIxYzc6LCFSU0U2ODktLiF//EABgBAAMBAQAAAAAAAAAAAAAAAAABAgME/8QAIREBAQEBAAICAgMBAAAAAAAAAAERAiExEkEDUSIyYXH/2gAMAwEAAhEDEQA/APoQGk4RLMuk4RLgUkThlpEX4/HCmpbU8gN5J3ARktrVAu8wBtpU72zazA9Jdou72d//AGwbInYfxHmYpo4vIpZTY8LH4xWnjbbf6XU6IKIC7+SjvMwOP2rUxDZ3NgO3QdgEX4iqzuWc3nm3cgIg6T+Fd/Hj58IKyDcBrGCE5d4A3DmecG90k23c+MMJyjhza56o7T9JP2yrwv3ziBnNz6MoqL9f3MMC+pilbTKo7QLGDM9pTOEwAylVE0GztpsNCxPL9NZk0MOoVyN+6KzRLjf4TFBoaDMThMWykHW3rUTWYHFB1BHjM7Ma83RU9PT0S3ROgTgkhAq6DLadSVTojiTKi8Jiui9oX7WBY1pGkrMuYSBmsQHr1AoJP+ZjOkW1sgZr9e2nEUx/Lzbt/wATU7RTQ6n4aT5V0yxS5gijtvx778d3rdHSI3qFiWJJJ56nXf67Z2t1Ra0jh1uyjsB8TK8c/WiMOzSxjpB13y1V4mIVYtxb0Z5xfXy75YLAX42NvXnJUUvbvPzlEk/VXKO7164wd6Onrx+MPRNSfVrfuJY1O43ajT4EwsBItDQmUrTjh8PZS3K/0/aB0KF2iMEEIhNFeEO/gLi9txsey+6cXCnN8V/SIfFPDkWs3unjxXtjPZmJ9k+Unqtx4X59xlNBFtYjfvv67d8rNPQod41Q815eEKqNmpkou2Ris6C51Gh56c4xmVauiSWRnViCQkrSIkxKS6pl2aUSyEJvmGkgwlh3eEDxFYKCSbATaMyfpJj1pUmc69nM8BPi2NqNUdnc3YnU/Tsmx6c7ZFRwiG6rv/N+omIZrm/lFQYYWiBd27gOEWYlrsYb7TqX4XIiyodYBdhkvrwHr9POTczqPZQB69fScyRErUGGo4AHrhpKXWy9sjf14GMGiOPXDMotLaVQEntB8wf2issd/wCX9JKnVsb93xMPkeG9dFyZef8A1EfpB8PhCLHtPwlT4i4tyKD4xtha68f5/np84VUg/B7P95bb1B8dSD5/OU19nAG3l9LTRYUdYD+T6KYJj6encSPDePgZnem05ZvG0gFzDx+sWVHJHaOPnG2INiwO4389/wCsSVOq1j6G8Q1necNNi4iz9hGvy+fzmoUzDYGplqAcD9dJtMM+ZVPMD5RVXK8Ts4J0STSEmJWssEZY7J3kJOBNzWq5RMJ0s6QjKUpt+dxoFHJTxbTwhG3Nts9qdEMSQOBzNfTTiB5a77Aaqk2QlIe0xFiR7qb1W3Pm3oTbcZMbjcE4QO91znqgjXLxYg+EWHf2TUbdz1B7V7gHRF5KOPr6a5ljrFoT+6RAHjE7otc6xhJH1hC1L6CAs0twz9YQKi3Op7J7h8ZK1z4yyoukmnFaHd3zttPXZOLLV1k6bi6t438iLfKNsAhZx+YDzteBUE4+rxngXKWbLexvbyH0jXy3FOmM/dp8P8SjGpqRzHygGG2oxb3Dw+kYYpri/IH6SW0rL7UFtT69XmZxNS4HPd+k0m06LOSo3C/ziDEYbIGBHHT14wievYNalyh8Ju9lPmpqe/5mfPahsO6bno/UvTHn5i5+N476Z83ybzoMiDO3kLSBkwZWDJAxhaJ28gsnAjenhUopdd9rs7asT2nx0EBbB+0bM40GoHyJ7flGjpmIJ3DcO3nOsLXmtYsV0zOVVRd5IHnoAPjMNUWzEDW2nlpebnpGpZxpouYjvCGx7gQD4TD4hMpI5aRQ1iaraLqi74fhnjXoxhlbEF2FwiNUAPNSoGnjfwEduQ+eduEL7KrqmdqFVU/EUcDvJtu7ZTh063Z6/efaUqO6XJABG631nzrpJhESt1BbMLsNPe52HZI5624vv8fxhdSXW/rnJ1U0kRvtyGveRJo1xLZKEWTpLv8AGWpT0PriZ5E3AdsWHBWHGoA9X3TX4WjTQKWZdObC/DhM3gNnOzBiDlJ3c9I1wPR1VcO7FgL6EW7ASb8B8pPi/bfnmz6PKNJS1xY3N9PhGowQYG/IjzgWytmKmqg2JvqTbwHCPFFpMjSvnONqujuqJme5y33aW1PnM3i0qtc1b5r6DQC3Ow05eU+jbc2aM+caZt/fM9isJxa5HbrD0PhOvthawms6KVL0yPw2HmWMz20qGVhy3Rx0Ob/eL2r9RH75c+fHrGpWTEiJISGrokhIidEZVasnaQUyd40NIF0kKiy0bpxhNWTP7TwgYi/Jz8h8mM+cbYw+RzfiR8r/AKT69iKd/XP0J8t6WEe0a1rAt8Aqj5NF9mSU94jbYuLFPEI5909RvytbXwOU+EX0KJCF+GbL5AE/3Ccdee4j4GFPm5dfTcdUZaQVTaxyseQHHymQ2lhNQ+8318RxPrdGGyNsirR9m5/1FXLr99RuYH8YG/1b2Lo9RmB0AvY79eEyniunrOudZRz1mPcPl+khRbh2SwrfN+b9IPTFj5zXXLhijdUn12w/o5hfas2m4ad5uf0iqobL5fEa/Ga/oHTARm4nN8Db6CTb4acc/wAmkw2zgFUW3H6GMKeCUbgITQTQQhUikb3pWiWErqNraXVIpqY0JdirN2KLsTyAhfBSaMxdEOhB8JkcbRtcGO8RtTq3KFN2htfXhoTrFVe762k9XV8zGF6RUsov2iXdFNKj8iPr+0I6VUuoBzYSHRhN57hHP6sO/wC7UCdEiJMSYHZ0TwnowmsItK6KwzJBNPANJwyXATk3ZKqg0M+dbbwGeqBlvdrWHIEMx8WbfPotfcYoo4LM5Y+HmSfmPKIMRtDZxSiqcSwJ726v1/5JDGYQKhW2uYZdOGg08j5TW4/B56gv7iXY/m1t8zF+09nlzZdyg27+J8pOqjEjqEWOoJt2btY7XapdGRxrYjMOO7eInxVOzhTzA+UrpPr67jJvlfPVghE9/wAD68oPXp2bv/SMcEt3sfvC3jr+8qxlK2VuRynvHoyisBtcp5/DX6ma3oJiBkK9/wAT+8RJhswYKL3BK8+74iGdEQUqMh01B/pPEeQivpfPivquGfQQq8WYZ9BDA8Uq1jQOtRW97az2JxSopZiABqSdwmbx+32bq0UY/wA26/5bwti+Oeur4X4/DrdmZhoRlgwri1hM9ia9Vwdy9pNz4Ad8I2UzhTnIPIgW0mbXv8d5mlfSZrlV7SfL18IZsLDZKYvvOvrygN/b1XYe6pKKeZWwPzMf0ksLDcJfqY5L561cJYJXJrJUlOgTgl1JLmMqIw1OHezncNS0hHs48ZaLA0E5JcJwzZCDCV5BLTOWiAdaIFzbeYPicKMu7iPnDzOMsLA+W9LsD7OqCNzAMO/j8fnEisC+g946c9f3m96c4PNTV+Km3gbT565IPcbiSuUzwjnQjepv3+vrHNbDhxYbqi5kPJ7ag94F+8GJMAb3I5X/AFE0WyKYqKyE8cyEb146doOsVacluyQblDoym4vw5ju3+c0eCwClw40YXB7ju74DjsIyn2lrOuj23H+bu/WMsDicwDDRuI9b5N/auT+i1hL1qRVTxXA6GEJVkarBVRQd+sVY3Cbwq+UZq8kzC0rVc9Xn0yTbLbiLCCbTfJTYLvsQvfbeJpcbUFpmMbTLv2DQd5vf6eUU9n+TvrqeaF2FhcikcQx+IEdBYPQp2JPO3w/zClF47WMetJqJwKZICIa6BGGBp3MCRIzwSRxPVMESWWnFkpTJcNwnDOjdOGakgZ6dM5AImekpyIEnSGmGCKRfVyRzCoTafMsdhijEdp8v8T6xtVNEb8La9xFmPgLnwmSx2zg7MhsDu+Vj65RHGW2W+Vrc9B+nzjzAOyPmXTW3dyv2RE+FZXKnQg+REc7Mq5jlfQ7v37/0kdTGvF1uKCrVQNbeNezmD3GKXwnsn093ePqPXZL9i1ipyN2dx4A/C0c4nDh1tx4TNrAKUgwvaUOpTdCqdMppwnawvEovXaZGhXyg+L28iDUPrwAH6y+rRiPGp1l04mHPmlfE8C6mPz2I3HjOKIBhhbq8ifKHpLxnbb7TprG+BogiK0jjAwRVzYQGVfwMZqJMJHiNL6eDhlOlaXBZ2MaiJ7NJT0olw3TkJo4Ym14bSwi8ppngiczhj1sEp4Qeps4cLwwiqcl+KwbqLqQe8fvEWNrVk1FvIWMV5sOGNemGBU8ZnsVTykZhquh/mXgw52uR43htHajML2B5ruIPG0txdNqqZkQN2EAnw7ZNhs5jMGjuDcMWUHTiL6MRwMJobHXfu9b4Pg6ADs6+4Mqb132zG1t/vHu42mjw4mPVsuOjiT4o0MLa194hqHgZxVkgIlousFqCGNB3EVEBVFmc2s2UFrXy6+A328JpawiHatO6OOOU/KE9i+i/CNnsR94m3npDwLaSvA7LK4imiKERTdhrowpg6jhqB5zRV9nhjqLHmJr8WGk6RvgXE82FVV0A8px8ILBkJHZwh8aVumqNLA8zVTEuOqbiSoV3vpeGljTXnopp41x7ywhMcDv074aVg6T0lC1AeMtzjmIE0dOnpJYYadxI8jJoNBO0Bp4t8zNdJK07lnp6GhRVpDl3xbjcCMpIF7axzK7bxwMcpMVtPY2ntEFjvIHGU4SoyrcdZDcEbmU8bTanD2FuEVNs8K5NtDHkPWTrYMm4RgzMQAL2sTvL5rBbgneT2QjD1bMEbQ2uORANjaaptmqLMNeH8wB5Hl2RTjdmFOswzKD1WudMx3sfu6n4m3OR1xKvnrEEE8YxXAdXMhzjkCCfAj3oFWWY3mxtz1KqJlDyxjKZK4pdYnxK5qirzYD9o7qXOgFzyEBxuzyozPe+8W+6bgA34nUbo+ebU9dSI7DpH2hYlSuTqW1JsbZnPPLlAHIbzpHrJeAbKoZcxAOtje1tW1YW74zDAb50czw5qXYrlLMMQFAMuxWHuJXRS5tDMo+lX8LmbWcq0gHyjdxjFBqeyDUkuWPhFeTlCskgyQt0lZSLBoNk5G091vxQkpOZJPxN9By6DunKHu+fznVa4HdOUPdE0QlOWnZleie0WqYjG02YkLVLICSbDM6EDkOqsMDUyFoj2v0qp4ar7OslQKQCrqoZDfeN4OnZeV/7Z4IEXrFcyhhdKm4ki5IXTcYSUa0a7pB6YMmhnoBSqW0g21EbJ1eYzDmu4/MHwhrieteGgk2Y2VxTA4E6biNSCR908P8AEZ4rBI+rLrzGh/fxgeN0dct1IsdDYHs7r8O7nC8Niwxy3vvsbWvY2IPaDy0hYJS9tjC+jm3aoJ87iU4jY6r95j4CPSw5iD1yDxinM/Svl1+yvD4JV3Dx4+cU7YF3Ca21uBcadZSDbuO/sjzF4sIO35X3RXgELuzuFJ1sRyNiL8zL/wATqVKkfZrflu7L6fCWeyhT6yG4RgNVXhAsH7zeuMPqboDs0Xzt228v8xX2BVFdGldBND3y+iNJ5VtAlDJIMkKRJ32d4rDAexnfZQx1kLQw5009UZbEcpdT3CU4k6Dul6bhESNVwoLHcASe4az539nxY13qk6VPaqfzqaTj4O/lNp0irZMLXblTe3eVIHzmT6J0smHwb/jxNW/c1Kqg+KLHPRDPtF1XDAi49ut78rG4hW19m0TjMJekhB9upBRcpAp5lBFrGxuRyuYF9pDdXDf8YfARztvTE4Q/z1B50XP0h+gH6Y7bfCpSNIKXd7ZWGjKFNxvFtSmsYVtsLRw61sUPZMdGQHOc2vVW3vHS8wnSPEHFYmuy3NPCUnK23Z0Iue8tfwpxj0/T2uJwNJicjtY62956at42+cM9AZ//AETCk2yVv/inyzx7sPbNPFIXpZsoYocwAOYAHcCfxCLOndBVwFQKqqF9llAAAA9ogsLbtDAcXjjS2OjLoxo0kBGhu4VGPfbND6BvX6R4Jn9ma65gbX6wS+62e2X42l+LweXrISOZUgEjkdNYq6I9HqC4RGekjvUUO5dQxs4uqi+4AEbuN52hiDgcQmGYlqFUE4ck3ZGBF6BY711GW+7MB3H/AAClxRQge8CbX4yDY4tmyrltxbT13yP+1+A1vVCm9mDUqgYEbwwyb5Knt/AsC61adltckFbX3e8BaMB1wD1Sr1CLAhlsOPMcuHf3RmmHCCw9d8rw22cNUYJTr03c3squCxsCTYcdAT4Qiu4UEsQoG8kgAd5O6BqSspqSkbYoM4pJVR3NyFQ57AC5LFbhR32mW+0TEvTTDujFWWoWG+11AIuOI0lRNayqNDF2yHGVl5Nfz/xCMBjVr0Uqr7rre3I7mXvBBHhM4donDLnKO4ByMFsXNiVz2vzAPjFfZxqlFjOkTI0+nFFwciVC9iVRlAzEC+XMpNiQDbttNFsjaaYmmKtM6HQg71Yb1bt/UGMD0WdYWkk3SFZ5I1Q8jJyvPA2irPcjuEJBi5n65X8vxAh95IZ/p7Xy4Gr/ADZF83W/wBmXobNxWGXCu1XPQNSgzpc/6ZdltYNu1cg5eeojX7S8UooJSLWZ3U2191Qcx8Cy+cN6V4hTgnemwZQqOhG4hHQgjylT0VAfaObjCj/1f/r+sZ9LMTkfDP8AhqVT5Yas3/TFP2iPc4T/AIp+aSP2nYgpQpsN+dwP66NVD/fHJ6CrYuz8myMQ7avXpVHY8cuQhBfuu39cN6VYJ6uFw+JpC9SgEqAWuSpVGbvsVU9wML2wAmzqqDctHIO4KFh2zMYEwdKo25aCO3ctMMflD/S0h6Q9JMPidn1MlRQ7CmfZsQHBFRCQAfetY6i+6LdvP/3Phe00x5K5+gibA7KWrg8Vi3BzhxktotyylzbiOuB2WjrbKZtjYc/hKH4uv1hmG3Wx9MPRA/8ALp/2LM79pNO+HRwbMlRSDxGZWFx4hfKO9gVM2GoNzpU/7Fin7Qf/AAT9j0/7wPrJnij6dxGFwtSlTd6aA4odVigYrUqpn6rHVCTmI4X74s6HbNoZa+GxFJGq03s91BLobNTa++1wbctJVtd2GysKymzK1AqeIIDZT52lGz8ViDtNBiKapUNJ6bldFdRmdX3kHVQNDw4bpf0EOgWARcTiVZLvRcBGN7qM1RGt4W85t8Zh0dGR1zIwKsNdQd40mR2afZbXrpwqJm8SEe/mH85rKzxYGM6JYVKeLxqILBWQKOSE1CAPMfCUfah/uKZ5O39h/SSwFf2e1ayHQVUBXtIRXH9ryv7TDegn5/8AoeXnhIvYLfw2JrYQ6I3+tQ/K3voO4jd2MZXVqZMS6H7wFRO4WV1Hccrf1wPpHtKkRRxNKqj1KDKSquuZkawdQL3/AGJnelmKASniadmNNldeTI4yEX5EMD4CR1DlBbHy0NpOhAy1gWTTcx64tysVdfKF4Kt/C7RekNKdextwDPqpA4dbMvc3ZM3tXbSO1Gul1q0n66MCGsCGAvuIuHHPrboXtkvVx6lLtmNFqdvwFUcEdm8+cUN9VQ6Sl21Mkh0lK6mMPObCV5ROvqewT1ojNajWxCj8SKfIn9IzBisa1KbckPzH7xiDJoA7U2dRrFfa01fLfLmF7Xte3kPKK+kGyvaYf+GokUxoAOtlyg3ym2tj4xzWfrQSvU6804mp6uMFtyjtB/ZCrTzikQVamubMer72XX7o4CH9KMU2JoYRnpmmz4gKabXJGrrrcA62vu4zXZ4LimuO6XOWd6JOlu11p4Y0iCWqhlU6WGUoWzeDcIvx3SWkdnrRRj7TJTpspUiwCgOb7iLKRv8AvTWYOhnGoFu0X+Ejj+jOHqjrUkvzUZD45d/jJuS4qbYTvhfZ7JamRY+zzt+ZmDm/de3hK1p+02MFGpVGYf0VCx+CmM+kWCrVqeSm4S9w4YaOpG69jaC9GMPiKSHD10T2ag5GBvmzMSynXdqeAjwSmXQzFZ8FS/lBQ/0MQPhlgP2i4gLhMp3u6AeF3J/5fjEuAxp2bVejUDHDuc6OBex3eOgAI36A8Zx8X/2ji0VQf4el1mzD3jcHUfzWAtyzGL4+T1p8PsdKuCoUKuYBUpMcpAOZVvbUHiTFaNm2vr93Dm3if/20071NJhKu06a7UR1dChTIzZhlByvoTwNwvnCQ9X7XfJtig/BkA77rVT55ZpXxSFmQMpZbZlBBK33ZhwvYzF9NscgxGGqI6sabBnCsCQoZHXdzBNu+dr16xrDFYSkzCqhV1dbao2UMwDC1wFIN9145E2udMP8ASxOGxI0sQrHsRrnzV2HhJfaL/uE/OD/yPA9rUcfiUCVKC2DZhlKA3sRxc6amD7aGMq0VpVMOboVuVGZjlQqCQCdd9/CHVE8mX+y+GZAcjKSAbh24j+YmLcMpfDVsM/v0w9PvBuUYdnLuEe7ExTvSGemyMlkIYEXyqvWFwNDf4RDtXGCjjC5VghQK5to2gKsOdtB4GZVbwwKYnDl8i52QMjW62bLmAuNTfd4xn9n7o9POQDUpqKVzvCKWZbctHUf0QLoxXUowVrhHdRvBy5iyGx1tZgPCe6Mn+Hx9WjuWopZP71A7gXHhHyVfQlMpY2EqxOKVFzPcAsq3AvYuQq3twuQPGWVhoJRIhp28iy3nMslRthTcjsEYAxfg9/hDpNMFVfrwKu/WhD+8YHX96b8Rj1VqvKnIO82HGZrpDtKrTqIiOVViL2Avx+9a48DL9i4hnp9di1ny3O+2U7zvPedZn+b8vwmyFzz8vbR4HHIzFFvpfkN1uG8b41R5nNmoAz2Ho3jyhM+Or1NraL6iBt8BqoVNofKcT7s1468p6ngvq00cZXVXXkwDDyMjToIi5URUXkoCjvsJ2S4TZnrqPoRFVfYOGYkmglybmwI1PcYdxlggWgE2dRVgy0kDAKA2UEgKAqgE66AAeEKMk0reMIZ+sO8fOV1xdiZyl7w75I7zI7Xx6QCSNSncEWlwnGmdjRl/+yKaVfaImR7EHKbKwPNd2+x05RRtfBYk10r0hmyZcpUDMlt4Yb2FyeehM1mJ96ewfvQzwzt/kWJ0jZ2TDV6LJVZ0HDIbOpzC+ttOFx2zXVzugpoq6gsoJUqykgEhuYhFaJoiTPZpUZ6Af//Z"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="text-center card-title">Nhân Viên 1</h5>
+                                    <p class="text-center card-text">Thắc mắc xin liên hệ với tôi thông tin liên hệ của
+                                        tôi
+                                        ở dưới</p>
+
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><i class="fa-solid fa-user fa-beat-fade"></i> Name:
+                                            Hót
+                                            Gơ Quận Cam</li>
+
+                                        <li class="list-group-item"> <i class="fa-solid fa-phone fa-beat-fade"></i>
+                                            Phone:
+                                            +845.2393.345
+                                        </li>
+                                        <li class="list-group-item"><i class="fa-solid fa-envelope fa-beat-fade"></i>
+                                            Email:
+                                            NV1@gmail.com</li>
+                                    </ul>
+
+                                    <center><a href="#" class="btn btn-primary">Liên Hệ</a></center>
+                                </div>
+                            </div>
+                        </div>
+                    </center>
+                </div>
+                <div class="col">
+                    <center>
+                        <div class="shadow p-3 mb-5 bg-body rounded">
+                            <div class="card" style="width: 18rem;">
+                                <img class="img-fluid"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8P1kmhwrRObIMdb7DPsGunQTWluPRK13Lcw&usqp=CAU"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="text-center card-title">Nhân Viên 1</h5>
+                                    <p class="text-center card-text">Thắc mắc xin liên hệ với tôi thông tin liên hệ của
+                                        tôi
+                                        ở dưới</p>
+
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><i class="fa-solid fa-user fa-beat-fade"></i> Name:
+                                            Hót
+                                            Gơ Quận Cam</li>
+
+                                        <li class="list-group-item"> <i class="fa-solid fa-phone fa-beat-fade"></i>
+                                            Phone:
+                                            +845.2393.345
+                                        </li>
+                                        <li class="list-group-item"><i class="fa-solid fa-envelope fa-beat-fade"></i>
+                                            Email:
+                                            NV1@gmail.com</li>
+                                    </ul>
+
+                                    <center><a href="#" class="btn btn-primary">Liên Hệ</a></center>
+                                </div>
+                            </div>
+                        </div>
+                    </center>
+                </div>
+                <div class="col">
+                    <center>
+                        <div class="shadow p-3 mb-5 bg-body rounded">
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfqyTonxcP56TfjiUtPA_6WJVsrzvJm27iMg&usqp=CAU"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="text-center card-title">Nhân Viên 1</h5>
+                                    <p class="text-center card-text">Thắc mắc xin liên hệ với tôi thông tin liên hệ của
+                                        tôi
+                                        ở dưới</p>
+
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><i class="fa-solid fa-user fa-beat-fade"></i> Name:
+                                            Hót
+                                            Gơ Quận Cam</li>
+
+                                        <li class="list-group-item"> <i class="fa-solid fa-phone fa-beat-fade"></i>
+                                            Phone:
+                                            +845.2393.345
+                                        </li>
+                                        <li class="list-group-item"><i class="fa-solid fa-envelope fa-beat-fade"></i>
+                                            Email:
+                                            NV1@gmail.com</li>
+                                    </ul>
+
+                                    <center><a href="#" class="btn btn-primary">Liên Hệ</a></center>
+                                </div>
+                            </div>
+                        </div>
+                    </center>
+                </div>
+            </div>
+        </div>
+        </div>
+    </article>
+    <article class="Hotroonline">
+        <p style="font-size: 30px;" class="p-3 text-center text-uppercase text-secondary fw-bold">Hỗ Trợ Online</p>
+        <div class="container">
+            <div class="row">
+                <div id="EmailForm" class="col">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Điền Email Của Bạn</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Gửi Thông Tin Tư Vấn Của Bạn</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <a href="#" class="btn btn-primary active" aria-current="page">Gửi</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <p>Hỗ Trợ ...</p>
+                    <ol class="list-group list-group-numbered">
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">Change A Booking</div>
+                                Đổi lịch đi chơi
+                            </div>
+                            <span class="badge bg-primary rounded-pill">14</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">Cancel A Booking</div>
+                                Hủy lịch
+                            </div>
+                            <span class="badge bg-primary rounded-pill">20</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">Get Refund Status</div>
+                                ...
+                            </div>
+                            <span class="badge bg-primary rounded-pill">50</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">Use Airline Credit</div>
+                                ....
+                            </div>
+                            <span class="badge bg-primary rounded-pill">2</span>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </article>
+    <section>
+        <p style="font-size: 30px;" class="p-3 text-center text-uppercase text-secondary fw-bold">Explore help articles
+        </p>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <center>
+                        <div class="card" style="width: 23rem;">
+                            <div style="width: auto;" class="card-body">
+                                <h5 class="card-title"><i class="fa-solid fa-jet-fighter-up"></i> Flight</h5>
+                                <hr>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <p class="card-text"><a style="text-decoration: none;" href="#">Book a flight
+                                                using
+                                                an airline credit
+                                            </a></p>
+                                        <p class="card-text"><a style="text-decoration: none;" href="#">Cancel your
+                                                flight
+                                            </a></p>
+                                        <p class="card-text"><a style="text-decoration: none;"
+                                                href="#">Airline-initiated
+                                                schedule change
+                                            </a></p>
+                                    </li>
+                                    <li class="list-group-item"><a style="text-decoration: none;" href="#"
+                                            class="card-link">MORE</a></li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </center>
+                </div>
+                <div class="col">
+                    <center>
+                        <div class="card" style="width: 23rem;">
+                            <div style="width: auto;" class="card-body">
+                                <h5 class="card-title">Refunds and Charges</h5>
+                                <hr>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <p class="card-text"><a style="text-decoration: none;" href="#">Refund
+                                                timelines,
+                                                policies & processes
+                                            </a></p>
+                                        <p class="card-text"><a style="text-decoration: none;" href="#">Get a receipt
+                                                for
+                                                your booking
+                                            </a></p>
+                                        <p class="card-text"><a style="text-decoration: none;" href="#">Payment security
+                                                and
+                                                options
+                                            </a></p>
+                                    </li>
+                                    <li class="list-group-item"><a style="text-decoration: none;" href="#"
+                                            class="card-link">MORE</a></li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </center>
+                </div>
+                <div class="col">
+                    <center>
+                        <div class="card" style="width: 23rem;">
+                            <div style="width: auto;" class="card-body">
+                                <h5 class="card-title"><i class="fa-regular fa-hotel"></i> Lodging</h5>
+                                <hr>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <p class="card-text"><a style="text-decoration: none;" href="#">Hotel
+                                                or vacation rental booking
+                                            </a></p>
+                                        <p class="card-text"><a style="text-decoration: none;" href="#">Cancel your
+                                                hotel
+                                            </a></p>
+                                        <p class="card-text"><a style="text-decoration: none;" href="#">Check in and out
+                                                of
+                                                your hotel
+
+                                            </a></p>
+                                    </li>
+                                    <li class="list-group-item"><a style="text-decoration: none;" href="#"
+                                            class="card-link">MORE</a></li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </center>
+                </div>
+                <div class="col">
+                    <center>
+                        <div class="card" style="width: 23rem;">
+                            <div style="width: auto;" class="card-body">
+                                <h5 class="card-title"><i class="fa-solid fa-cube"></i> Packages</h5>
+                                <hr>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <p class="card-text"><a style="text-decoration: none;" href="#">Change your
+                                                vacation
+                                                package
+                                            </a></p>
+                                        <p class="card-text"><a style="text-decoration: none;" href="#">Airline
+                                                telephone
+                                                numbers
+                                            </a></p>
+                                        <p class="card-text"><a style="text-decoration: none;" href="#">Cancel your
+                                                vacation
+                                                package
+                                            </a></p>
+                                    </li>
+                                    <li class="list-group-item"><a style="text-decoration: none;" href="#"
+                                            class="card-link">MORE</a></li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </center>
+                </div>
+                <div class="col">
+                    <center>
+                        <div class="card" style="width: 23rem;">
+                            <div style="width: auto;" class="card-body">
+                                <h5 class="card-title"><i class="fa-sharp fa-solid fa-id-card"></i> Destination Services
+                                </h5>
+                                <hr>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <p class="card-text"><a style="text-decoration: none;" href="#">Change or cancel
+                                                your activity
+                                            </a></p>
+                                        <p class="card-text"><a style="text-decoration: none;" href="#">CBooking
+                                                mistakes
+                                                and name changes
+                                            </a></p>
+                                        <p class="card-text"><a style="text-decoration: none;" href="#">Use a
+                                                promotional
+                                                coupon
+                                            </a></p>
+                                    </li>
+                                    <li class="list-group-item"><a style="text-decoration: none;" href="#"
+                                            class="card-link">MORE</a></li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </center>
+                </div>
+                <div class="col">
+                    <center>
+                        <div class="card" style="width: 23rem;">
+                            <div style="width: auto;" class="card-body">
+                                <h5 class="card-title"><i class="fa-solid fa-car"></i> Car</h5>
+                                <hr>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <p class="card-text"><a style="text-decoration: none;" href="#">Change or cancel
+                                                your car rental
+                                            </a></p>
+                                        <p class="card-text"><a style="text-decoration: none;" href="#">Booking mistakes
+                                                and
+                                                name changes
+                                            </a></p>
+                                        <p class="card-text"><a style="text-decoration: none;" href="#">Use a
+                                                promotional
+                                                coupon
+                                            </a></p>
+                                    </li>
+                                    <li class="list-group-item"><a style="text-decoration: none;" href="#"
+                                            class="card-link">MORE</a></li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </center>
+                </div>
+                <div class="col">
+                    <center>
+                        <div class="card" style="width: 23rem;">
+                            <div style="width: auto;" class="card-body">
+                                <h5 class="card-title"><i class="fa-solid fa-user"></i> Privacy</h5>
+                                <hr>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <p class="card-text"><a style="text-decoration: none;" href="#">Correct or
+                                                update
+                                                your account information
+                                            </a></p>
+                                        <p class="card-text"><a style="text-decoration: none;" href="#">Information
+                                                about
+                                                your privacy
+                                            </a></p>
+                                        <p class="card-text"><a style="text-decoration: none;" href="#">Privacy rights
+                                                for
+                                                California residents
+                                            </a></p>
+                                    </li>
+                                    <li class="list-group-item"><a style="text-decoration: none;" href="#"
+                                            class="card-link">MORE</a></li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </center>
+                </div>
+                <div class="col">
+                    <center>
+                        <div class="card" style="width: 23rem;">
+                            <div style="width: auto;" class="card-body">
+                                <h5 class="card-title">Security</h5>
+                                <hr>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <p class="card-text"><a style="text-decoration: none;" href="#">Payment security
+                                                and
+                                                options
+                                            </a></p>
+                                        <p class="card-text"><a style="text-decoration: none;" href="#">Responsible
+                                                disclosure of web vulnerabilities
+                                            </a></p>
+                                        <p class="card-text"><a style="text-decoration: none;" href="#">Beware of email
+                                                scams (phishing)
+                                            </a></p>
+                                    </li>
+                                    <li class="list-group-item"><a style="text-decoration: none;" href="#"
+                                            class="card-link">MORE</a></li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </center>
+                </div>
+                <div class="col">
+                    <center>
+                        <div class="card" style="width: 23rem;">
+                            <div style="width: auto;" class="card-body">
+                                <h5 class="card-title">Account</h5>
+                                <hr>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <p class="card-text"><a style="text-decoration: none;" href="#">View your
+                                                booking
+                                            </a></p>
+                                        <p class="card-text"><a style="text-decoration: none;" href="#">Manage your TSA
+                                                info
+                                            </a></p>
+                                        <p class="card-text"><a style="text-decoration: none;" href="#">Customs
+                                                allowances
+                                                for international travelers
+                                            </a></p>
+                                    </li>
+                                    <li class="list-group-item"><a style="text-decoration: none;" href="#"
+                                            class="card-link">MORE</a></li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </center>
+                </div>
+                <div class="col">
+                    <center>
+                        <div class="card" style="width: 23rem;">
+                            <div style="width: auto;" class="card-body">
+                                <h5 class="card-title">Cruise</h5>
+                                <hr>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <p class="card-text"><a style="text-decoration: none;" href="#">Change or cancel
+                                                your cruise booking
+                                            </a></p>
+                                        <p class="card-text"><a style="text-decoration: none;" href="#">Booking mistakes
+                                                and
+                                                name changes
+                                            </a></p>
+                                        <p class="card-text"><a style="text-decoration: none;" href="#">Use a
+                                                promotional
+                                                coupon
+                                            </a></p>
+                                    </li>
+                                    <li class="list-group-item"><a style="text-decoration: none;" href="#"
+                                            class="card-link">MORE</a></li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </center>
+                </div>
+                <div class="col">
+                    <center>
+                        <div class="card" style="width: 23rem;">
+                            <div style="width: auto;" class="card-body">
+                                <h5 class="card-title">Travel Alerts</h5>
+                                <hr>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <p class="card-text"><a style="text-decoration: none;" href="#">Government
+                                                travel
+                                                alerts and warnings
+                                            </a></p>
+                                        <p class="card-text"><a style="text-decoration: none;" href="#">Bad weather and
+                                                travel disruptions
+                                            </a></p>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </center>
+                </div>
+                <div class="col">
+                    <center>
+                        <div class="card" style="width: 23rem;">
+                            <div style="width: auto;" class="card-body">
+                                <h5 class="card-title"><i class="fa-sharp fa-solid fa-shield-halved"></i> Privacy and
+                                    Security</h5>
+                                <hr>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <p class="card-text"><a style="text-decoration: none;" href="#">Disclosure of
+                                                access
+                                                to customer data on Orbitz travel portal
+                                            </a></p>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </center>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <hr>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p class="fw-bold">SUPPORT</p>
+                    <div class="d-flex flex-column bd-highlight mb-3">
+                        <div class="p-2 bd-highlight">Binh My, Cu Chi, TP. Ho Chi Minh</div>
+                        <div class="p-2 bd-highlight"><i class="fa-solid fa-phone fa-beat"></i>+843.356.3673</div>
+                        <div class="p-2 bd-highlight"><i class="fa-solid fa-envelope fa-beat"></i>hchong204@gmail.com
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <p class="fw-bold">SHOP</p>
+                    <div class="d-flex flex-column bd-highlight mb-3">
+                        <div class="p-2 bd-highlight">Men's</div>
+                        <div class="p-2 bd-highlight">Women's</div>
+                        <div class="p-2 bd-highlight">Kid's</div>
+                        <div class="p-2 bd-highlight">Shoes</div>
+                        <div class="p-2 bd-highlight">Gift Cards</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <p class="fw-bold">INFORMATION</p>
+                    <div class="d-flex flex-column bd-highlight mb-3">
+                        <div class="p-2 bd-highlight">Questions?</div>
+                        <div class="p-2 bd-highlight">Order Status</div>
+                        <div class="p-2 bd-highlight">Sizing Charts</div>
+                        <div class="p-2 bd-highlight">Return Policy</div>
+                        <div class="p-2 bd-highlight">Contact Us</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <p class="fw-bold">MY ACCOUNT</p>
+                    <div class="d-flex flex-column bd-highlight mb-3">
+                        <div class="p-2 bd-highlight">My Account</div>
+                        <div class="p-2 bd-highlight">My Address</div>
+                        <div class="p-2 bd-highlight">Wish List</div>
+                        <div class="p-2 bd-highlight">Order list</div>
+                        <div class="p-2 bd-highlight">Order Status</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <p class="fw-bold">STAY IN TOUCH</p>
+                    <div class="d-flex flex-column bd-highlight mb-3">
+                        <form>
+                            <div class="mb-3">
+                                <input type="email" class="form-control text-center" id="exampleInputEmail1"
+                                    placeholder="Email" aria-describedby="emailHelp">
+                            </div>
+                            <button style="width: 250px;" type="submit" class="btn btn-success p-">Gửi Phản Hồi
+                                -></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-5 text-center">&copy; HCHONG 2023. All right reserved.</div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
