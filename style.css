@@ -17,7 +17,7 @@ nav {
     padding: 0 15px;
 }
 
-.item > a {
+.item>a {
     color: black;
     text-decoration: none;
 }
@@ -472,83 +472,30 @@ h2 {
     background-color: #000;
 }
 
-footer {
-    margin-top: 40px;
-    background-color: white;
+.content-with-sidebars {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.footercontainer {
+/* columns */
+.content-with-sidebars>* {
     width: 100%;
-    padding: 70px 30px 28px;
+    padding: 0.5rem;
 }
 
-.iconfooter {
+/* container */
+.responsive-three-column-grid {
+    display: block;
+}
+
+/* columns */
+.responsive-three-column-grid>* {
+    padding: 1rem;
+}
+
+
+.column-footer {
     display: flex;
-    justify-content: center;
-}
-
-.iconfooter a {
-    text-decoration: none;
-    padding: 10px;
-    background-color: gray;
-    margin: 10px;
-    border-radius: 50%;
-}
-
-.iconfooter a i {
-    font-size: 2em;
-    color: black;
-    opacity: 0.9;
-}
-
-.iconfooter a:hover {
-    background-color: #111;
-    transition: 0.5s;
-}
-
-.iconfooter a:hover i {
-    color: white;
-    transition: 0.5s;
-}
-
-.footernav {
-    margin: 30px 0;
-}
-
-.footernav ul {
-    display: flex;
-    justify-content: center;
-}
-
-.footernav ul li a {
-    color: black;
-    margin: 20px;
-    text-decoration: none;
-    font-size: 1.3em;
-    opacity: 0.7;
-    transition: 0.5s;
-}
-
-.footernav ul li a:hover {
-    opacity: 1;
-}
-
-.footerbottom {
-    background-color: gray;
-    padding: 20px;
-    text-align: center;
-}
-
-.footerbottom {
-    color: white;
-}
-
-.designer {
-    opacity: 0.7;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 400;
-    margin: 0px 5px;
 }
 
 /* điện thoại dọc */
@@ -617,6 +564,10 @@ footer {
         background-color: rgb(112, 112, 112);
         color: #fff;
     }
+
+    .content-with-sidebars>* {
+        padding-top: 20px;
+    }
 }
 
 /* điện thoại ngang */
@@ -644,13 +595,12 @@ footer {
     }
 
     .formtravel {
-        height: 80vh;
+        height: 140vh;
         width: 100%;
     }
 
-    footer {
-        margin-top: 150px;
-        background-color: white;
+    .content-with-sidebars>* {
+        padding-top: 30px;
     }
 }
 
@@ -670,6 +620,17 @@ footer {
 
     .picture>img {
         width: 100%;
+    }
+
+    .responsive-three-column-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .formtravel {
+        height: 50vh;
+        width: 100%;
+        margin: 50px auto;
     }
 }
 
@@ -695,5 +656,10 @@ footer {
 
     .MenuNgang {
         /* display: none; */
+    }
+    .formtravel {
+        height: 80vh;
+        width: 100%;
+        margin: 50px auto;
     }
 }
